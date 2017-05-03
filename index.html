@@ -3,30 +3,67 @@
 
 <head>
     <title>Homework 4</title>
-    <style type="text/css">
-        .crystal-image {
-            width: 300px;
-            height: 300px;
-        }
-    </style>
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 <body>
     <header>
-        <h1 id="title">Crystal Collector!</h1>
+        <h1 id="title" class="element">Crystal Collector!</h1>
     </header>
-    <div class="mainsection">
-        <div id="directions">
-            <p id="directionText">
+    <div class="mainSection" class="element">
+        
+        <div id="directions leftPane" class="element">
+            <p id="directionText" >
                 You will be given a random number at the start of the game.
             </p>
+                
+            <p id="directionText">
+                There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. 
+            </p>
+                
+            <p id="directionText">
+                You will win the game by matching your total score to random number, you lose the game if your total score goes above the random number. 
+            </p>
+                
+            <p id="directionText"> 
+                The value of each crystal is hidden from you until you click on it.
+            </p> 
+                
+            <p id="directionText">
+                Each time when the game starts, the game will change the values of each crystal.
+            </p>
         </div>
-        <h1>Number to Guess: <span id="number-to-guess"></span></h1>
-        <!-- Note that this div is now empty. We will fill it dynamically -->
-        <div id="crystals"></div>
+
+        <div id="rightPane" class="element">
+            <div id="WinLossTally">
+                <div id="win">Wins: <span id="winCounter"></span> </div>
+                <div id="loss">Losses: <span id="lossCounter"></span> </div>
+            </div>
+            <div id="targetNumber">
+                <h1 class="element">Number to Guess: <span id="number-to-guess"></span></h1>
+            </div>
+            <div id="currentTotal">
+                <h1>You current total is: <span id="currentTotalJS"></span> </h1>
+           </div>
+            <!-- Note that this div is now empty. We will fill it dynamically -->
+            <div id="crystals" class="element"></div>
+            <div id="reset" class="button">
+                Reset Button
+            </div>
+        </div>
+
     </div>
 
+    <footer>
+        <div id="copyright" class="element">
+            &#169; Copyright 2017 Fahad Rahman
+        </div>
+    </footer>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script type="text/javascript" src="assets/crystalGame.js"></script>
+    <script type="text/javascript" src="assets/javaScript/crystalGame.js"></script>
 </body>
 
 </html>
