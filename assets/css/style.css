@@ -20,10 +20,14 @@ body{
 	flex-direction: column;
 	-webkit-flex-direction: column;
 	-ms-flex-direction:column;
+
+	font-family: 'Montserrat', sans-serif;
+
+	background-image: url(../images/blueBG.png);
 }
 
 header{
-
+	margin: 1%;
 }
 
 footer{
@@ -31,31 +35,104 @@ footer{
 
 h1{
 	font-size: 2em;
-	margin: 0;
+	font-weight: bold;
+	padding: .5%;
 }
 
 h2{
-	font-size: 1.1em;
-
+	font-size: 1.5em;
+	font-weight: bold;
 }
 
 h3{
-	font-size: 1em;
+	font-size: 1.17em;
+	font-weight: bold;
 }
 
-.element {
+/*.element{
 	border-style: solid;
-	border-color: yellow;
+	border-color: red;
 	border-width: 1px;
+}*/
+
+#title{
+	background-color: lightblue;
+	border-radius: 10px;
 }
+
 .mainSection{
 	flex: 1;
 	display: flex;
-
 }
 
-#leftPane, #rightPane{
-	flex: 1;
+.leftPane, .rightPane{
+	flex:1;
+	margin: 1% 5% 1% 5%;
+	padding: 1%;
+
+	background-color: lightblue;
+	border-radius: 10px;
+}
+
+#directions{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: lightblue;
+	border-radius: 10px;
+}
+
+#directionHeader{
+	padding-bottom: 2%;
+}
+
+.rightPane{
+	display: flex;
+	flex-direction: column;
+}
+
+#winLossTally{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	flex:.5;
+}
+
+#playingNumbers{
+	flex:.5;
+	display: flex;
+	justify-content: space-between;
+}
+
+#targetNumber, #currentTotal{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	
+	padding: 1% 2% 1% 2%;
+
+	background-color: lightgreen;
+	border-radius: 10px;
+}
+
+#number-to-guess, #currentTotalJS{
+	display: flex;
+	justify-content: center;
+	font-size: 2em;
+}
+
+#crystals{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex:1.5;
+}
+
+#reset{
+	flex:.5;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 .crystal-image {
@@ -82,4 +159,8 @@ h3{
   background-color: red;
   box-shadow: 0 5px darkred;
   transform: translateY(4px);
+}
+
+#copyright{
+	text-align: center;
 }

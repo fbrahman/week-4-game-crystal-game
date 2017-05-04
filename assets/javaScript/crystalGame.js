@@ -86,7 +86,7 @@ var game = {
             game.gamePlay(this);
         });
 
-        $("#reset").click(function(){
+        $("#resetButton").click(function(){
             game.reset(n, tnmin, tnmax, nomin, nomax);
         });
     },

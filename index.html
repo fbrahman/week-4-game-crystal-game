@@ -6,58 +6,64 @@
     
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
 
 </head>
 <body>
     <header>
-        <h1 id="title" class="element">Crystal Collector!</h1>
+        <h1 id="title">Crystal Collector!</h1>
     </header>
-    <div class="mainSection" class="element">
+    <div class="mainSection">
         
-        <div id="directions leftPane" class="element">
+        <div id="directions" class="leftPane">
+            <h2 id="directionHeader">Directions:</h2>
             <p id="directionText" >
                 You will be given a random number at the start of the game.
             </p>
-                
+            <br>    
             <p id="directionText">
                 There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. 
             </p>
-                
+            <br>    
             <p id="directionText">
                 You will win the game by matching your total score to random number, you lose the game if your total score goes above the random number. 
             </p>
-                
+            <br>
             <p id="directionText"> 
                 The value of each crystal is hidden from you until you click on it.
             </p> 
-                
+            <br>
             <p id="directionText">
                 Each time when the game starts, the game will change the values of each crystal.
             </p>
         </div>
 
-        <div id="rightPane" class="element">
-            <div id="WinLossTally">
-                <div id="win">Wins: <span id="winCounter"></span> </div>
-                <div id="loss">Losses: <span id="lossCounter"></span> </div>
+        <div class="rightPane">
+            <div id="winLossTally" class="element">
+                <div id="win"><h2>Wins: <span id="winCounter"></span></h2></div>
+                <div id="loss"><h2>Losses: <span id="lossCounter"></span></h2></div>
             </div>
-            <div id="targetNumber">
-                <h1 class="element">Number to Guess: <span id="number-to-guess"></span></h1>
-            </div>
-            <div id="currentTotal">
-                <h1>You current total is: <span id="currentTotalJS"></span> </h1>
-           </div>
+            <div id="playingNumbers" class="element">            
+                <div id="targetNumber" class="element">
+                    <h2>Number to Guess: </h2>
+                    <h2><div id="number-to-guess" class="element"></div></h2>
+                </div>
+                <div id="currentTotal" class="element">
+                    <h2>You current total is: </h2>
+                    <h2><div id="currentTotalJS" class="element"></div></h2>
+               </div>
+           </div>       
             <!-- Note that this div is now empty. We will fill it dynamically -->
             <div id="crystals" class="element"></div>
-            <div id="reset" class="button">
-                Reset Button
+            <div id="reset" class="element">
+               <button id="resetButton" class="button"> Reset </button>
             </div>
         </div>
 
     </div>
 
     <footer>
-        <div id="copyright" class="element">
+        <div id="copyright">
             &#169; Copyright 2017 Fahad Rahman
         </div>
     </footer>
